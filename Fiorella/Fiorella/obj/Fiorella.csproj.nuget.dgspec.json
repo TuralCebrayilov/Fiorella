@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\Fiorella.csproj": {}
+    "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\Fiorella.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\Fiorella.csproj": {
+    "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\Fiorella.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\Fiorella.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\Fiorella.csproj",
         "projectName": "Fiorella",
-        "projectPath": "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\Fiorella.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\Fiorella.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,8 @@
               "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.17, )"
             },

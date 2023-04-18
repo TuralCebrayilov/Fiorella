@@ -5,7 +5,7 @@
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Humanizer.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".xml"
           }
         },
@@ -477,7 +477,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "5.0.17"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {
+          "lib/netstandard2.1/_._": {
             "related": ".xml"
           }
         },
@@ -7464,11 +7464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\Fiorella.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\Fiorella.csproj",
       "projectName": "Fiorella",
-      "projectPath": "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\Fiorella.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\Fiorella.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Music\\Project\\Fiorella\\Fiorella\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\GitHubFiorella\\Fiorella\\Fiorella\\Fiorella\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
