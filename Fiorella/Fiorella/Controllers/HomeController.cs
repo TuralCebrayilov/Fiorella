@@ -25,6 +25,8 @@ namespace Fiorella.Controllers
             {
                 products = await _Db.products.ToListAsync(),
                 category = await _Db.Categories.ToListAsync(),
+                Bio = await _Db.Bio.ToListAsync(),
+                Sliders = await _Db.Sliders.ToListAsync(),
             };
             return View(homeVM);
         }

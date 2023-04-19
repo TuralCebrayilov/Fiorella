@@ -3,23 +3,29 @@
 
         <section id="slider">
             <div class="owl-carousel slider">
-                <div> <img src="~/img/h3-slider-background.jpg" alt=""> </div>
-                <div> <img src="~/img/h3-slider-background-2.jpg" alt=""> </div>
-                <div> <img src="~/img/h3-slider-background-3.jpg" alt=""> </div>
+                @foreach (Slider slider in Model.Sliders)
+        {
+             <div> <img src="~/img/@slider.Image" alt=""> </div>
+        }
+               
+                
             </div>
             <div class="container context pl-lg-5 ml-lg-3">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <div class="text">
+                   
+                        @foreach (Bio Bio in Model.Bio)
+                { <div class="col-lg-5">
+                     <div class="text">
                             <h1>Send <span>flowers</span> like</h1>
-                            <h1>you mean it</h1>
-                            <p class="text-black-50 d-none d-sm-block">Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will
-                                make it special cursus a sit amet mauris. </p>
+                            <h1>@Bio.Title</h1>
+                            <p class="text-black-50 d-none d-sm-block">@Bio.Description </p>
                         </div>
                         <div class="img">
-                            <img src="~/img/h2-sign-img.png" alt="">
+                            <img src="~/img/@Bio.SignatureImage" alt="">
                         </div>
                     </div>
+                }
+                       
                 </div>
             </div>
         </section>
@@ -39,9 +45,9 @@
                                 <ul class="category list-unstyled" style="display: none;">
                                     <li><a href="" data-id="all">All</a></li>
                                     @foreach (Category cat in Model.category)
-                            {
-                                 <li><a href="" data-id="Category-@cat.Id">Category-@cat.Name</a></li>
-                            }
+                                      {
+                                 <li><a href="" data-id="cat-@cat.Id">@cat.Name</a></li>
+                                      }
                                    
                                 </ul>
                             </li>
@@ -50,7 +56,7 @@
                             <li><a href="" data-id="all">All</a></li>
                              @foreach (Category cat in Model.category)
                             {
-                                 <li><a href="" data-id="Category-@cat.Id">@cat.Name</a></li>
+                                 <li><a href="" data-id="cat-@cat.Id">@cat.Name</a></li>
                             }
                         </ul>
                         <ul class="list-unstyled">
@@ -65,7 +71,7 @@
                     @foreach (Product product in Model.products)
             {
                  <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item text-center" data-id="category-@product.CategoryId">
+                        <div class="product-item text-center" data-id="cat-@product.CategoryId">
                             <div class="img">
                                 <a href="">
                                     <img src="~/img/@product.Image" class="img-fluid" alt="">

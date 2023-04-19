@@ -7,5 +7,7 @@ namespace Fiorella.ViewModels
     {
         public List<Product> products { get; set; }
         public List<Category> category { get; set; }
+        public List<Bio> Bio { get; set; }
+        public List<Slider> Sliders { get; set; }
     }
 }
