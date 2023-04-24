@@ -268,3 +268,12 @@ C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\F
 C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Fiorella.csproj.CopyComplete
 C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Fiorella.genruntimeconfig.cache
 C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\ref\Fiorella.dll
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Slider\Index.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Index.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Create.cshtml.g.cs

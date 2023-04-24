@@ -23,7 +23,7 @@ namespace Fiorella.Controllers
         {
             HomeVM homeVM = new HomeVM()
             {
-                products = await _Db.products.ToListAsync(),
+                products = await _Db.Products.ToListAsync(),
                 category = await _Db.Categories.ToListAsync(),
                 Bio = await _Db.Bio.ToListAsync(),
                 Sliders = await _Db.Sliders.ToListAsync(),
