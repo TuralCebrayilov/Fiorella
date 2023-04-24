@@ -15,6 +15,8 @@ namespace Fiorella.Areas.Admin.Controllers
     {
         private readonly AppDbContext _Db;
         private readonly IWebHostEnvironment _env;
+        private object Id;
+
         public ProductsController(AppDbContext Db, IWebHostEnvironment env)
         {
             _Db = Db;
@@ -22,12 +24,12 @@ namespace Fiorella.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Product> products = await _Db.Products.Include(x=>x.Category).ToListAsync();
+            List<Product> products = await _Db.Products.Include(x => x.Category).ToListAsync();
             return View(products);
         }
         public async Task<IActionResult> Create()
         {
-            ViewBag.Category=await _Db.Categories.ToListAsync();
+            ViewBag.Category = await _Db.Categories.ToListAsync();
             return View();
         }
         [HttpPost]
@@ -70,6 +72,72 @@ namespace Fiorella.Areas.Admin.Controllers
             await _Db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id==null)
+            {
+                return NotFound();
+            }
+            Product _Dbproduct = await _Db.Products.FirstOrDefaultAsync(x => x.Id == id);
+            if (_Dbproduct == null)
+            {
+                return BadRequest();
+            }
+            ViewBag.Category = await _Db.Categories.ToListAsync();
+            return View(_Dbproduct);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int? id,Product product,int CatId)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Product _Dbproduct = await _Db.Products.FirstOrDefaultAsync(x => x.Id == id);
+            if (_Dbproduct == null)
+            {
+                return BadRequest();
+            }
+            ViewBag.Category = await _Db.Categories.ToListAsync();
+            #region Exist Item
+            bool isExist = await _Db.Products.AnyAsync(x => x.Name == product.Name && CatId!= id);
+            if (isExist)
+            {
+                ModelState.AddModelError("Name", "This product is already exist !");
+                return View(product);
+            }
+            #endregion
+            #region Save Image
+
+
+            if (product.Photo != null)
+            {
+                if (!product.Photo.IsImage())
+                {
+                    ModelState.AddModelError("Photo", "Please select image type");
+                    return View();
+                }
+                if (product.Photo == null)
+                {
+                    ModelState.AddModelError("Photo", "max 1mb !!");
+                    return View();
+                }
+                string folder = Path.Combine(_env.WebRootPath, "img");
+                _Dbproduct.Image = await product.Photo.SaveFileAsync(folder);
+
+            }
+
+            #endregion
+            _Dbproduct.Name = product.Name;
+            _Dbproduct.Price = product.Price;
+            _Dbproduct.CategoryId = CatId;
+             await _Db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+
+
 
     }
 }

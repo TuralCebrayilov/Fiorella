@@ -277,3 +277,4 @@ C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\R
 C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
 C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Index.cshtml.g.cs
 C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Create.cshtml.g.cs
+C:\Users\HP\Desktop\GitHubFiorella\Fiorella\Fiorella\Fiorella\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Update.cshtml.g.cs
